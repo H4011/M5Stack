@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食事プラン登録</title>
+</head>
+
+<body>
+    <h1>食事プラン登録フォーム</h1>
+    <form id="mealForm">
+        <label for="name">名前:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="allergy">アレルギー情報:</label>
+        <input type="text" id="allergy" name="allergy" required><br><br>
+        
+        <label for="date">日にち:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <label for="menu">献立:</label>
+        <textarea id="menu" name="menu" required></textarea><br><br>
+        
+        <button type="button" onclick="submitForm()">送信</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
